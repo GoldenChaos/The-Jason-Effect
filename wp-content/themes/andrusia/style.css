@@ -1,0 +1,1126 @@
+/*
+Theme Name: Andrusia
+Theme URI: http://www.thejasoneffect.net/
+Description: Crafted from rare books, ribbons and love. Sparkled to a shine.
+Version: 1.0 beta
+Author: Jason Rappaport
+Author URI: http://www.thejasoneffect.net
+Tags: blue, beige, custom header, fixed width, one column, widgets
+
+The stuff inside this CSS file goes from top to bottom. Header CSS is at the top, footer at the bottom, and content in between in the order they appear. Don't forget it!
+*/
+
+
+/*------------------- Global Stuff -------------------*/
+
+body {
+	background: #42250f url("./images/bgtile.jpg") repeat;
+	background-position: center;
+	font-family: Georgia, "Hoefler Text", "Times New Roman", Times, serif;
+	margin: 0;
+	padding: 0;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+a {
+	color: #16344c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1c5a8b;
+	text-decoration: none;
+}
+
+a img {
+	border: 0;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+
+/*------------------- Make the Header Pretty -------------------*/
+
+#headerbg {
+	background: #f9f7ed;
+	width: 100%;
+	padding: 0;
+	height: 95px;
+}
+
+#header {
+	width: 940px;
+	height: 95px;
+	padding-top: 15px;
+}
+
+#logo {
+	width: 401px;
+	height: 60px;
+	float: left;
+}
+
+#social {
+	margin: 0;
+	padding: 20px 0;
+	float: right;
+	list-style: none;
+}
+
+#social li {
+	display: inline;
+	opacity: .8;
+	width: 40px;
+	height: 40px;
+	padding: 0 5px;
+}
+
+#social li:hover {
+	opacity: 1;
+}
+
+.tooltip {
+	color: #fff;
+	font-family: 'Trebuchet MS';
+	font-size: 11px;
+	text-align: center;
+	height: 21px;
+	width: 93px;
+	margin: -35px -1px;
+	padding-top: 1px;
+	display: none;
+	background: transparent url("./images/popup.png") no-repeat scroll 0 0;
+}
+
+
+/*------------------- Make the Bluebar Pretty -------------------*/
+
+#bluebar {
+	background: url("./images/bluebar.png") repeat-x;
+	width: 100%;
+	height:  238px;
+	margin-top: -10px;
+}
+
+#speechbubble {
+	background: url("./images/speechbubble.png") no-repeat;
+	width: 940px;
+	height: 161px;
+	position: relative;
+}
+
+#coolmessage {
+	color: #ffffff;
+	font-size: 10px;
+	font-family: "Trebuchet MS", sans-serif;
+	padding: 76px 17px;
+}
+
+
+/*------------------- The Main Navigation -------------------*/
+
+#main-navigation {
+	width: 960px;
+	padding-left: 136px;
+	margin-top: -34px;
+}
+
+#main-navigation li {
+	float: left;
+	list-style: none;
+	height: 41px;
+	margin-right: 20px;
+	background: url("./images/globalnavbg.png") repeat-x;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-moz-box-shadow: 0px 2px 25px #000000;
+	box-shadow: 0px 2px 25px #000000;
+}
+
+#main-navigation li a, #main-navigation li a:visited {
+	display: block;
+	padding: 2px 15px 6px 15px;
+	height: 52px;
+	overflow: hidden;
+	color: #000000;
+	font-size: 30px;
+	position: relative;
+	z-index: 10;
+}
+
+#main-navigation li a:hover {
+	text-decoration: none;
+}
+
+#main-navigation li.back {
+	background: url('./images/arrow.png') no-repeat bottom center;
+	width: 24px;
+	height: 20px;
+	margin-top: 41px;
+	position: absolute;
+	-moz-box-shadow: 0px 0px 0px;
+	box-shadow: 0px 0px 0px;
+}
+
+
+/*------------------- Make the Content Area Pretty -------------------*/
+
+#contentbg {
+	width: 890px;
+	padding: 30px 25px;
+	background: #f9f7ed url("./images/contentbg.jpg") repeat-y;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/* -webkit-box-shadow: 0px 3px 100px #000000; */
+	-moz-box-shadow: 0px 3px 100px #000000;
+	box-shadow: 0px 3px 100px #000000;
+	border-radius: 10px;
+	margin-top: -50px;
+}
+
+
+/*------------------- The Recent Works Slider -------------------*/
+
+#ribbon {
+	background: url("./images/ribbon.png") no-repeat;
+	width: 146px;
+	height: 146px;
+	position: relative;
+	z-index: 1;
+	margin: -5px 0 -140px -5px;
+}
+
+#featurewrap {
+	background: url("./images/sliderbg.png") repeat-x;
+	width: 500px;
+	height: 348px;
+	margin-left: 9px;
+}
+
+#featurewrap-left {
+	background: url("./images/sliderbg-left.png") no-repeat;
+	float: left;
+	width: 9px;
+	height: 348px;
+	margin-left: -9px;
+}
+
+#featurewrap-right {
+	background: url("./images/sliderbg-right.png") no-repeat;
+	float: right;
+	width: 9px;
+	height: 348px;
+	margin-right: -9px;
+}
+
+.slideprevious, .slidenext {
+	width: 38px;
+	height: 36px;
+	position: absolute;
+	z-index: 1;
+}
+
+.slideprevious {
+	background: url("./images/slide-left.png") no-repeat;
+	margin: 145px 0 0 -4px;
+	cursor: pointer;
+}
+
+.slidenext {
+	background: url("./images/slide-right.png") no-repeat;
+	margin: 145px 0 0 466px;
+	cursor: pointer;
+}
+
+.slideprevious:hover {
+	background: url("./images/slide-left.png") no-repeat 0 -36px;
+}
+
+.slidenext:hover {
+	background: url("./images/slide-right.png") no-repeat 0 -36px;
+}
+
+.recent-work {
+	width: 466px;
+	padding-top: 24px;
+	margin-left: 18px;
+	height:	282px;
+	position: relative;
+	overflow: hidden;
+}
+
+.items {
+    width: 20000em;
+    position: absolute;
+}
+
+.items div { 
+    float: left;
+}
+
+ul.slidenav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	position: relative;
+	float: right;
+	width: auto;
+	margin: 7px 20px 0 0;
+	cursor: pointer;
+}
+
+ul.slidenav li {
+	display: inline;
+	font-size: 18px;
+	font-family: "Trebuchet MS", sans-serif;
+	background: url("./images/slidenav.png") no-repeat;
+	width: 26px;
+	height: 24px;
+	padding: 1px 8px;
+	margin: 0 4px 0 4px;
+}
+
+ul.slidenav li a {
+	color: #000000;
+}
+
+ul.slidenav li.active {
+	color: #ffffff;
+	background: url("./images/slidenav.png") no-repeat 0 -24px;
+}
+
+ul.slidenav li.active a {
+	color: #ffffff;
+}
+
+.info {
+	font-family: "Trebuchet MS", sans-serif;
+	color: #fff;
+	width: 466px;
+	margin: 294px 0;
+	display: none;
+}
+
+.info h3 {
+	padding: 4px 10px;
+	margin-top: -83px;
+	border-bottom: 1px solid #0c304d;
+	border-top: 1px solid #0c304d;
+	background: url("./images/bluegradient.png") repeat-x;
+}
+
+.info p {
+	font-size: 12px;
+	height: 40px;
+	padding: 10px 10px 0 10px;
+	margin-top: -19px;
+	background: rgba(0,0,0,0.8);
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+}
+
+
+/*-------------- And now the rest of the content area... --------------*/
+
+#intro {
+	font-size: 18px;
+	width: 390px;
+	float: right;
+	margin-top: -362px;
+	margin-right: -17px;
+}
+
+#welcome {
+	background: url("./images/welcome.png") no-repeat;
+	height: 120px;
+}
+
+#intro p {
+	padding: 22px;
+	margin: -18px 0 0 5px;
+	text-align: justify;
+}
+
+.navigation {
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#searchwrapper {
+	background: url("./images/searchbg.png") repeat-x;
+	width: 450px;
+	height: 90px;
+	margin-bottom: -15px;
+}
+
+#searchwrapper-left {
+	background: url("./images/searchbg-left.png") no-repeat;
+	width: 9px;
+	height: 90px;
+	float: left;
+	margin-left: -9px;
+}
+
+#searchwrapper-right {
+	background: url("./images/searchbg-right.png") no-repeat;
+	width: 9px;
+	height: 90px;
+	float: right;
+	margin-right: -9px;
+}
+
+#s {
+	height: 20px;
+	width: 350px;
+	border: 1px solid #bcb1a2;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 7px;
+	font-size: 18px;
+	font-family: "Trebuchet MS", sans-serif;
+	margin-top: 27px;
+}
+
+#searchsubmit {
+	border: none;
+	background: url("./images/searchsubmit.png") no-repeat;
+	width: 38px;
+	height: 36px;
+	padding-top: 10px;
+	cursor: pointer;
+}
+
+#searchsubmit:hover {
+	background: url("./images/searchsubmit.png") no-repeat 0 -36px;
+}
+
+
+/*------------------- Make Posts Pretty -------------------*/
+
+.postwrapper, #respondwrapper {
+	background: url("./images/postbg.png") repeat-x;
+	width: 876px;
+	min-height: 283px;
+	margin-left: 7px;
+	margin-bottom: 40px;
+}
+
+.postwrapper-left, #respondwrapper-left {
+	background: url("./images/postbg-left.png") no-repeat;
+	float: left;
+	width: 7px;
+	height: 283px;
+	margin-left: -7px;
+}
+
+.postwrapper-right, #respondwrapper-right {
+	background: url("./images/postbg-right.png") no-repeat;
+	float: right;
+	width: 7px;
+	height: 283px;
+	margin-right: -7px;
+}
+
+.mainpost {
+	margin-top:30px;
+	margin-bottom:0px;
+}
+
+.post, #respond {
+	padding: 17px 9px;
+}
+
+.minical {
+	background: url("./images/minical.png") no-repeat;
+	width: 70px;
+	padding: 3px 0;
+}
+
+.date-month {
+	font-size: 24px;
+}
+
+.date-day {
+	font-size: 18px;
+}
+
+.minicomments {
+	background: url("./images/minicomments.png") no-repeat;
+	width: 64px;
+	margin: -70px 77px;
+	line-height: 20px;
+	padding: 9px 0;
+}
+
+.comment-count {
+	font-size: 34px;
+}
+
+.comment-text {
+	font-size: 11px;
+}
+
+.minical, .minicomments {
+	height: 64px;
+	text-align: center;
+}
+
+.post-title {
+	margin-left: 155px;
+	font-size: 36px;
+}
+
+.post-title p {
+	font-size: 11px;
+	line-height: 0;
+	padding-bottom: 13px;
+}
+
+#page-title {
+	margin-left: 85px;
+	margin-top: -67px;
+	font-size: 36px;
+	padding: 7px 0;
+}
+
+.post-content {
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.post-content a {
+	font-weight: bold;
+}
+
+.post-content a img {
+	border: none;
+}
+
+.wp-caption {
+	text-align: center;
+	padding: 5px 0;
+	margin: 10px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 11px;
+	border: 1px solid #bcb1a2;
+	background: #ebe4d3;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption-text {
+	margin: 0;
+	padding-top: 4px;
+}
+
+.gallery img, .gallery a img {
+	padding: 4px;
+	margin: 0 0 -22px 18px;
+	border: 1px solid #bcb1a2;
+	background: #ebe4d3;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.gallery a:hover img {
+	background: #f7f2e4;
+	border: 2px solid #bcb1a2;
+}
+
+
+/*------------------- All the Freaking Buttons -------------------*/
+
+.button, #fom-button, .nav-button {
+	background: url("./images/button.png") no-repeat;
+	font-size: 24px;
+	font-weight: normal;
+	width: 228px;
+	height: 42px;
+	text-align: center;
+	display: block;
+	padding-top: 9px;
+}
+
+.button {
+	margin: 40px 0 0 635px;
+}
+
+#fom-button {
+	margin: 0 0 0 133px;
+}
+
+.nav-button {
+	background: url("./images/navbutton.png") no-repeat;
+	width: 190px;
+}
+
+.button:hover, #fom-button:hover {
+	background: url("./images/button.png") no-repeat 0 -51px;
+}
+
+.button-nav:hover,{
+	background: url("./images/navbutton.png") no-repeat 0 -51px;
+}
+
+.button a, #fom-button a, .nav-button a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+
+/*------------------- Make the Comments Pretty -------------------*/
+
+.commentlist {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.comment {
+	background: #ebe4d3;
+	font-size: 14px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #bcb1a2;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.comment p {
+	padding: 0 3px;
+}
+
+.alt {
+	background: #f7f2e4;
+}
+
+.avatar {
+	background: url("./images/avatarbg.png") no-repeat;
+	float: left;
+	padding: 4px 16px 5px 5px;
+	width: 32px;
+	height: 32px;
+}
+
+.fn, .says {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.comment-meta {
+	float: right;
+	font-size: 11px;
+	margin-top: -40px;
+	width: auto;
+}
+
+#minirespond {
+	background: url("./images/minirespond.png") no-repeat;
+	width: 64px;
+	height: 64px;
+}
+
+#respond-title {
+	margin: -65px 0 0 80px;
+	font-size: 36px;
+	padding: 13px 0;
+}
+
+#author, #email, #url {
+	height: 22px;
+	width: 35%;
+	border: 1px solid #bcb1a2;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 7px;
+	font-size: 18px;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+.label {
+	font-size: 12px;
+	margin-bottom: -10px;
+	margin-left: 3px;
+}
+
+#submit {
+	background: url("./images/button.png") no-repeat;
+	color: #16344c;
+	border: none;
+	font-size: 24px;
+	width: 228px;
+	height: 51px;
+	text-align: center;
+	font-family: Georgia, "Hoefler Text", "Times New Roman", Times, serif;
+	margin-left: 630px;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background: url("./images/button.png") no-repeat  0 -51px;
+	color: #1c5a8b;
+}
+
+#comment {
+	width: 58%;
+	height: 150px;
+	border: 1px solid #bcb1a2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-family: "Trebuchet MS", sans-serif;
+	padding: 10px;
+	float: right;
+	margin-top: -188px;
+}
+
+#comment-loggedin {
+	width: 97.5%;
+	height: 150px;
+	border: 1px solid #bcb1a2;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-family: "Trebuchet MS", sans-serif;
+	padding: 10px;
+}
+
+
+/*------------------- Make My Portfolio Pretty -------------------*/
+
+.intro {
+	overflow: auto;
+	padding: 10px;
+}
+
+.intro img {
+	padding-right: 10px;
+}
+
+.portslider-title {
+	color: #fff;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 24px;
+	width: 817px;
+	margin: 30px 0 -16px 10px;
+	padding: 4px 10px;
+	border-bottom: 1px solid #0c304d;
+	border: 1px solid #0c304d;
+	background: url("./images/bluegradient.png") repeat-x;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+}
+
+.prev-web, .prev-graphics, .prev-art, .prev-photo, .next-web, .next-graphics, .next-art, .next-photo {
+	width: 38px;
+	height: 36px;
+	position: absolute;
+	z-index: 5;
+}
+
+.prev-web, .prev-graphics, .prev-art, .prev-photo {
+	background: url("./images/slide-left.png") no-repeat;
+	margin: 130px -13px;
+	cursor: pointer;
+}
+
+.next-web, .next-graphics, .next-art, .next-photo {
+	background: url("./images/slide-right.png") no-repeat;
+	margin: 130px 835px;
+	cursor: pointer;
+}
+
+.prev-web:hover, .prev-graphics:hover, .prev-art:hover, .prev-photo:hover {
+	background: url("./images/slide-left.png") no-repeat 0 -36px;
+}
+
+.next-web:hover, .next-graphics:hover, .next-art:hover, .next-photo:hover {
+	background: url("./images/slide-right.png") no-repeat 0 -36px;
+}
+
+.port-web, .port-graphics, .port-art, .port-photo {
+	width: 96.5%;
+	height:	310px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	padding: 5px;
+	margin: 10px;
+	font-family: "Trebuchet MS", sans-serif;
+	border: 1px solid #bcb1a2;
+	background: #ebe4d3;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.portitems {
+    width: 20000em;
+    position: absolute;
+}
+
+.portitems div { 
+    float: left;
+    width: 264px;
+    height: 300px;
+    width: ;
+    border: 1px solid #bcb1a2;
+    background: #fefcef;
+    margin: 5px;
+    padding: 0;
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.portitems div img {
+	width: 244px;
+}
+
+.portitems div div {
+	background: none;
+	margin: -19px 0 0 0;
+	padding: 0;
+	border: none;
+	float: none;
+}
+
+.port-title {
+	font-family: "Trebuchet MS", sans-serif;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.port-title a {
+	color: #fff;
+}
+
+.port-title h3 {
+	font-size: 18px;
+	padding: 4px 10px;
+	border-bottom: 1px solid #0c304d;
+	border: 1px solid #0c304d;
+	background: url("./images/bluegradient.png") repeat-x;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+}
+
+.port-title img {
+	font-size: 12px;
+	padding: 10px;
+	margin-top: -19px;
+	position: relative;
+	background: rgba(0,0,0,0.8);
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+}
+
+.skillset {
+	margin-bottom: 5px;
+	margin-top: -92px;
+	margin-right: 12px;
+	margin-left: 2px;
+	padding: 0;
+	width: 48%;
+}
+
+.skillset li {
+	font-size: 14px;
+	list-style: none;
+	padding: 2px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	border: 1px solid #bcb1a2;
+	background: #ebe4d3;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.port-description p {
+	margin-top: -106px;
+	padding: 10px;
+	text-align: left;
+}
+
+ul.portnav-web, ul.portnav-graphics, ul.portnav-art, ul.portnav-photo {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	position: relative;
+	float: right;
+	width: auto;
+	margin: 28px 15px 0 0;
+	cursor: pointer;
+}
+
+ul.portnav-web {
+	margin-top: 8px;
+}
+
+ul.portnav-web li, ul.portnav-graphics li, ul.portnav-art li, ul.portnav-photo li {
+	display: inline;
+	font-size: 18px;
+	font-family: "Trebuchet MS", sans-serif;
+	background: url("./images/slidenav.png") no-repeat;
+	width: 26px;
+	height: 24px;
+	padding: 1px 8px;
+	margin: 0 4px 0 4px;
+}
+
+ul.portnav-web li a, ul.portnav-graphics li a, ul.portnav-art li a, ul.portnav-photo li a {
+	color: #000000;
+}
+
+ul.portnav-web li.active, ul.portnav-graphics li.active, ul.portnav-art li.active, ul.portnav-photo li.active {
+	color: #ffffff;
+	background: url("./images/slidenav.png") no-repeat 0 -24px;
+}
+
+ul.portnav-web li.active a, ul.portnav-graphics li.active a, ul.portnav-art li.active a, ul.portnav-photo li.active a {
+	color: #ffffff;
+}
+
+
+/*------------------- Make the Footer Pretty -------------------*/
+
+#footerbg {
+	background: url("./images/footerbg.png") repeat-x;
+	width: 100%;
+	height: 336px;
+	margin-top: -70px;
+	position: relative;
+	z-index: -100;
+}
+
+#footer {
+	width: 900px;
+	height: auto;
+	color: #ffffff;
+	position: relative;
+}
+
+#footer a {
+	color: #aaaaaa;
+}
+
+#footer a:hover {
+	color: #eeeeee;
+}
+
+#footer h1 {
+	line-height: 10px;
+	padding-top: 8px;
+}
+
+#footer h2 {
+	font-size: 30px;
+	line-height: 10px;
+	padding-top: 5px;
+}
+
+#footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.linkcat {
+	list-style: none;
+}
+
+.footer-sidebar {
+	float: left;
+	min-width: 20%;
+	max-width: 30%;
+}
+
+
+/*------------------- Make the Calendar Pretty -------------------*/
+
+#wp-calendar {
+	background: #39393b;
+	empty-cells: show;
+	font-size: 11px;
+	width: 80%;
+	text-align: center;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #181818;
+}
+
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+}
+
+#wp-calendar a {
+	font-weight: bold;
+	display: block;
+	text-decoration: underline;
+}
+
+#wp-calendar a:hover {
+	background: #181818;
+	color: #ffffff;
+}
+
+#wp-calendar #today a {
+	color: #000000;
+}
+
+#wp-calendar #today a:hover {
+	color: #ffffff;
+}
+
+#wp-calendar caption {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 2px 3px;
+}
+
+#wp-calendar td {
+	color: #ffffff;
+	font-family: "Trebuchet MS", sans-serif;
+	padding: 2px;
+	text-align: center;
+	background-color: #181818;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#wp-calendar td.pad:hover {
+	background: #aaaaaa;
+}
+
+#wp-calendar td:hover, #wp-calendar #today {
+	background: #aaaaaa;
+	color: #000000;
+	cursor: pointer;
+}
+
+#wp-calendar th {
+	font-weight: bold;
+	font-family: "Trebuchet MS", sans-serif;
+	text-transform: capitalize;
+}
+
+
+/*------------------- Make the Contact Form Pretty -------------------*/
+
+.input_wrap, .errorlistwrap, .intouchsuccess, .contact_button_wrap {
+	width: 252px;
+	padding: 1px;
+	background: #181818;
+	margin-bottom: 3px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.git_input, .errorlistinner, .intouchsuccessinner {
+	color: #ffffff;
+	font-size: 14px;
+	font-family: "Trebuchet MS", sans-serif;
+	width: 242px;
+	height: 100%;
+	padding: 2px 4px;
+	background: #181818;
+	border: 1px solid #39393b;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.git_input_message {
+	margin: -0.1px 0;
+}
+
+.errorlistinner, .intouchsuccessinner {
+	width: 234px;
+	padding: 6px 8px;
+	border: 1px solid #883333;
+}
+
+.intouchsuccessinner {
+	border: 1px solid #338833;
+}
+
+.errorlistinner h3, .intouchsuccessinner h3 {
+	margin-top: 0px;
+}
+
+.required {
+	font-size: 11px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-style: italic;
+	text-align: right;
+}
+
+.contact_button_wrap {
+	width: 80px;
+}
+
+.contact_button {
+	color: #ffffff;
+	font-family: Georgia, "Hoefler Text", "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	width: 80px;
+	border: none;
+	background: #181818;
+	border: 1px solid #696969;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+}

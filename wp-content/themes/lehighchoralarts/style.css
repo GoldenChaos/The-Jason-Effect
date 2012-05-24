@@ -1,0 +1,567 @@
+/*
+Theme Name: Lehigh Choral Arts Music Stand
+Theme URI: http://lehighchoralarts.com/
+Description: A music stand is adorned with a booklet and other musical tools, and content drapes down below. Can't you just hear the beautiful sounds?
+Version: 1.5
+Author: Jason Rappaport
+Author URI: http://thejasoneffect.net
+Tags: red, paper, music, horizontal menu, one column, widgets
+ 
+********************************************
+* Lehigh University Choral Arts CSS        *
+* Painstakingly created by Jason Rappaport *
+* for the loving and appreciative choir    *
+*                                          *
+* Version 1.5 ~ February 2010              *
+********************************************
+*/
+
+/* Global, Big Things */
+
+body {
+	background: #670006 url("http://lehighchoralarts.com/wp-content/themes/lca/images/bg.jpg") no-repeat top center;
+	background-position: 0 0 -150px;
+	font-family: Georgia, "Hoefler Text", "Times New Roman", Times, serif;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+div.centered {
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.righthalf {
+	float: right;
+	width: 49.8%;
+}
+
+.lefthalf {
+	float: left;
+	width: 49.8%;
+}
+
+.imglink {
+	opacity: 0.9;
+}
+
+.imglink:hover {
+	opacity: 1.0;
+}
+
+
+/* The Music Stand and the Many Things Upon it */
+
+#headlines {
+	width: 850px;
+	padding: 30px;
+	margin-top: -32px;
+	background: rgba(248, 78, 76, 0.4);
+	border: 1px #a63030;
+	-moz-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#headlines-text {
+	text-align: center;
+	color: #ffffff;
+	font-size: 13px;
+	margin-top: -22px;
+}
+
+#headlines-text a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#headlines-text a:hover {
+	text-decoration: underline;
+}
+
+.newsticker {
+	list-style-type: none;
+	margin: 0;
+}
+
+#newsticker ul {
+	list-style: none;
+	margin-top: -20px;
+}
+
+#musicstand {
+	margin-top: 20px;
+}
+
+#musicstand-back {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/musicstand-back.png") no-repeat bottom center;
+	z-index: 1;
+	width: 931px;
+	height: 245px;
+}
+
+#booklet {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/booklet.png") no-repeat;
+	width: 432px;
+	height: 253px;
+	margin-left: 50px;
+}
+
+#lca {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/lca.png") no-repeat;
+	width: 201px;
+	height: 45px;
+	margin: -219px 0 0 512px;
+}
+
+#batonandpipe {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/batonandpipe.png") no-repeat;
+	width: 183px;
+	height: 265px;
+	margin: -90px 0 0 710px;
+}
+
+#nav-title {
+	font-size: 24px;
+	margin-bottom: -70px;
+	padding: 20px 0 0 43px;
+}
+
+#navigation1 {
+	padding: 74px 41px;
+}
+
+#navigation2 {
+	margin: -252px 0 0 215px;
+}
+
+#navigation1 a, #navigation2 a, #musicstand-back ol {
+	color: #4e4d3b;
+	font-size: 20px;
+	line-height: 30px;
+	text-decoration: none;
+	text-shadow: rgba(80, 80, 80, 0.4) 1px 1px 1px;
+}
+
+#navigation1 a:hover, #navigation2 a:hover {
+	color: #4e4d3b;
+	text-decoration: underline;
+}
+
+#navigation1 a:visited, #navigation2 a:visited {
+	color: #2f2d13;
+}
+
+.subtitle {
+	font-size: 12px;
+	font-style: italic;
+	margin: -5px 0 0 15px;
+}
+
+#musicstand-front {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/musicstand-front.png") no-repeat;
+	z-index: 3;
+	position: relative;
+	margin-top: -34px;
+	width: 955px;
+	height: 34px;
+}
+
+
+/* Make the Navigation Area Pretty */
+
+#menubarcover {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/menubarcover.jpg") no-repeat;
+	width: 920px;
+	height: 65px;
+	position: absolute;
+	margin-top: 17px;
+	z-index: -100;
+}
+
+#menubar {
+	position: absolute;
+	margin-top: 11px;
+	padding-top: 10px;
+	width: 1100px;
+	z-index: 1;
+}
+
+.menubar-div {
+	float: left;
+	margin-top: -35px;
+}
+
+#menubar a:hover {
+	text-decoration: underline;
+}
+
+.dropdown {
+	height: 42px;
+	margin: 3px 8px;
+	padding: 0 0 5px 0;
+	border: 1px solid rgba(0,0,0,0);
+	list-style-type: none;
+	overflow: hidden;
+	float: left;
+}
+
+.dropglee {
+	width: 150px;
+}
+
+.dropglee:hover {
+	width: auto;
+}
+
+.dropdolce {
+	width: 92px;
+	margin-left: 820px;
+	position: absolute;
+	z-index: -500;
+}
+
+.dropdolce:hover {
+	width: auto;
+	margin-left: 710px;
+}
+
+.dropdown:hover {
+	height: auto;
+	border: 1px solid #929188;
+	background: #b4b3a4 url("http://lehighchoralarts.com/wp-content/themes/lca/images/dropdownbg.gif") repeat-x bottom;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: rgba(0,0,0,0.5) 0 2px 3px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 0 2px 3px;
+	box-shadow: rgba(0,0,0,0.5) 0 2px 3px;
+	cursor: default;
+	overflow: visible;
+	z-index: 2;
+}
+
+.dropdown p {
+	font-size: 10px;
+	padding-top: 5px;
+}
+
+.menutitle, .menutitle a {
+	padding: 10px 12px 11px 12px;
+	font-size: 32px;
+	font-weight: normal;
+	color: #2f2d13;
+	text-decoration: none;
+	text-shadow: rgba(80, 80, 80, 0.4) 1px 1px 1px;
+}
+
+ul .menutitle, ul .menutitle a {
+	padding: 6px 6px 5px 6px;
+}
+
+/* Selected stuff isn't really complete yet!
+
+.selected {
+	background: url('http://lehighchoralarts.com/wp-content/themes/lca/images/menubarbg.gif') repeat-x;
+	border-left: 1px solid #929188;
+	border-right: 1px solid #929188;
+	color: #2f2d13;
+}
+
+.selected-right {
+	background: url('http://lehighchoralarts.com/wp-content/themes/lca/images/menubarbg.gif') repeat-x;
+	border-left: 1px solid #929188;
+	color: #2f2d13;
+	padding-right: 29px;
+	margin-right: -23px;
+}
+
+*/
+
+.selected-left {
+	background: url('http://lehighchoralarts.com/wp-content/themes/lca/images/menubarbg.gif') repeat-x;
+	border-right: 1px solid #929188;
+	color: #2f2d13;
+}
+
+.fancydiv {
+	width: 202px;
+	height: 13px;
+	background: url('http://lehighchoralarts.com/wp-content/themes/lca/images/fancydiv.png') no-repeat;
+}
+
+.subitem, .subitem a, .subitem a:hover {
+	margin: 2px 5px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #2f2d13;
+	text-decoration: none !important;
+	border: 1px solid rgba(0, 0, 0, 0);
+	display: block;
+}
+
+.subitem:hover {
+	background: #dfe0d3 url('http://lehighchoralarts.com/wp-content/themes/lca/images/subitembg.gif') repeat-x bottom;
+	border: 1px solid #eeede0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#navdivider {
+	position: absolute;
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/framebg.gif") repeat-x;
+	border-bottom: 1px solid #929188;
+	border-top: 1px solid #929188;
+	width: 918px;
+	height: 0px;
+	margin-top: 77.5px;
+	padding: 1px;
+	z-index: 0;
+}
+
+/* Obsolete Scrolling Arrow Code, saved for if we ever use scrolling again
+
+#leftscroll a {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/scroll-left.png") no-repeat;
+	position: absolute;
+	margin: 340px -28px;
+	width: 54px;
+	height: 54px;
+}
+
+#leftscroll a:hover {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/scroll-leftover.png") no-repeat;
+}
+
+#rightscroll a {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/scroll-right.png") no-repeat;
+	position: absolute;
+	margin: 340px 893px;
+	width: 54px;
+	height: 54px;
+}
+
+#rightscroll a:hover {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/scroll-rightover.png") no-repeat;
+}
+
+*/
+
+
+/* Make the Content Area Pretty */
+
+#content-bg {
+	background: #fdfcee url("http://lehighchoralarts.com/wp-content/themes/lca/images/content-bg.jpg") repeat-x bottom;
+	z-index: 0;
+	position: relative;
+	margin-top: -24px;
+	width: 920px;
+	height: 810px;
+	-moz-border-radius-bottomleft: 50px;
+	-moz-border-radius-bottomright: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	border-radius-bottomleft: 50px;
+	border-radius-bottomright: 50px;
+	-moz-box-shadow: rgba(0,0,0,0.5) 0 4px 18px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 0 4px 18px;
+}
+
+#content-bg-fluid {
+	background: #fdfcee url("http://lehighchoralarts.com/wp-content/themes/lca/images/content-bg.jpg") repeat-x bottom;
+	z-index: 0;
+	position: relative;
+	margin-top: -24px;
+	width: 920px;
+	-moz-border-radius-bottomleft: 50px;
+	-moz-border-radius-bottomright: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	border-radius-bottomleft: 50px;
+	border-radius-bottomright: 50px;
+	-moz-box-shadow: rgba(0,0,0,0.5) 0 4px 18px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 0 4px 18px;
+}
+
+.papertexture {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/papertexture.png") repeat-x bottom center;
+	width: 100%;
+	height: 100%;
+	-moz-border-radius-bottomleft: 50px;
+	-moz-border-radius-bottomright: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-webkit-border-bottom-right-radius: 50px;
+	border-radius-bottomleft: 50px;
+	border-radius-bottomright: 50px;
+}
+
+#contentwrapper {
+	width: 918px;
+	overflow: hidden;
+}
+
+#content {
+	width: 850px;
+	margin-top: 120px;
+	padding-bottom: 30px;
+}
+
+#content a {
+	color: #4e4d3b;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: rgba(80, 80, 80, 0.4) 1px 1px 1px;
+}
+
+#content a:hover {
+	color: #4e4d3b;
+	text-decoration: underline;
+}
+
+#content a:visited {
+	color: #2f2d13;
+}
+
+.size-thumbnail, .size-medium, .size-full, .frame {
+	vertical-align: top;
+	font-size: 12px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #9f9f94;
+	background: #b4b3a4 url("http://lehighchoralarts.com/wp-content/themes/lca/images/framebg.gif") repeat-x bottom;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px
+}
+
+.newsframe {
+	padding: 0 10px;
+	margin: 20px 0;
+	border: 1px solid #9f9f94;
+	background: #b4b3a4 url("http://lehighchoralarts.com/wp-content/themes/lca/images/framebg.gif") repeat-x bottom;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#welcomecontainer {
+	margin-top: -10px;
+}
+
+#welcomecontainer a {
+	font-size: 30px;
+	color: #5e5d48;
+	text-shadow: rgba(80, 80, 80, 0.4) 1px 1px 1px;
+	text-decoration: none;
+}
+
+#welcomecontainer a:hover {
+	text-decoration: underline;
+}
+
+#welcomecontainer td {
+	padding: 6px 0;
+}
+
+#paperframe {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/paperframe.png") no-repeat;
+	width: 834px;
+	height: 542px;
+}
+
+#paperframe-title {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/welcomewrapper-title.png") no-repeat;
+	position: absolute;
+	width: 274px;
+	height: 94px;
+	margin: 5px 0 0 5px;
+}
+
+#paperframe-content {
+	padding-top: 42px;
+}
+
+.events td {
+	vertical-align: top;
+	font-size: 12px;
+	width: 30%;
+	padding: 0 10px 10px 10px;
+	border: 1px solid #9f9f94;
+	background: #b4b3a4 url("http://lehighchoralarts.com/wp-content/themes/lca/images/framebg.gif") repeat-x bottom;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px
+}
+
+.events .free {
+	border: 2px solid #ff0000;
+}
+
+/* Footer Things */
+
+#footer {
+	position: relative;
+	margin-top: 25px;
+	z-index: 0;
+}
+
+#footer-bg {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/footer-bg.png") repeat-x;
+	width: 920px;
+	height: 88px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.footertexture {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/footertexture.png") repeat-x bottom center;
+	width: 100%;
+	height: 100%;
+}
+
+#zoellner {
+	margin: 23px 35px;
+}
+
+#contact {
+	padding: 0 40px 10px 35px;
+}
+
+#lehigh {
+	margin: 16px 45px;
+}
+
+#footer-deco {
+	background: url("http://lehighchoralarts.com/wp-content/themes/lca/images/footer-deco.png") no-repeat;
+	width: 913px;
+	height: 89px;
+	position: relative;
+	margin-top: 15px;
+}
+
+#copyright {
+	font-size: 10px;
+	color: #d76868;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+#copyright a {
+	color: #f6b8b8;
+	text-decoration: none;
+}
+
+#copyright a:hover {
+	text-decoration: underline;
+}

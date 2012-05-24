@@ -1,0 +1,315 @@
+/*
+Theme Name: The Jason Effect
+Theme URI: http://www.thejasoneffect.net/
+Description: Crafted from rare books, ribbons and love. Sparkled to a shine.
+Version: 2.0
+Author: Jason Rappaport
+Author URI: http://www.thejasoneffect.net
+Tags: blue, beige, custom header, fluid, two column, widgets
+
+The stuff inside this CSS file goes from top to bottom. Header CSS is at the top, footer at the bottom, and content in between in the order they appear. Don't forget it!
+*/
+
+
+body {
+	font-family: Museo;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	background: #fcfdef;
+}
+
+a {
+	color: #16344c;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(28, 90, 139, .5);
+}
+
+a:hover {
+	text-decoration: none;
+	background: rgba(28, 90, 139, .1);
+}
+
+a img {
+	border: 0;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+.clear {
+	clear: both;
+}
+
+#stripe-vertical {
+	width: 4px;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 250px;
+	z-index: 100;
+}
+
+#stripe-horizontal {
+	width: 250px;
+	height: 4px;
+	background: #fff;
+	position: fixed;
+	top: 245px;
+	left: 0;
+	z-index: 1000;
+}
+
+#sidebar {
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	background: -webkit-linear-gradient(right, #213b51, #021626);
+	background: -moz-linear-gradient(right, #213b51, #021626);
+	border-right: 4px solid #fff;
+	box-shadow: 0px 0 50px rgba(0,0,0,.5);
+}
+
+#logo-wrap {
+	width: 210px;
+	height: 245px;
+	padding-right: 40px;
+	background: -webkit-linear-gradient(right, #2a6290, #072d4d);
+	background: -moz-linear-gradient(right, #2a6290, #072d4d);
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
+#logo {
+	width: 150px;
+	height: 150px;
+	margin-bottom: -200px;
+	border: 10px solid #072d4d;
+	background: -webkit-linear-gradient(#ded1bd, #bca489);
+	background: -moz-linear-gradient(#ded1bd, #bca489);
+	box-shadow: rgba(255,255,255,.3) 0 2px 50px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 4;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+}
+
+#logo:hover {
+	box-shadow: rgba(255,255,255,.6) 0 2px 80px;
+}
+
+#logo:active {
+	box-shadow: rgba(255,255,255,.3) 0 2px 50px;
+	-webkit-transition: .03s;
+	-moz-transition: .03s;
+}
+
+#j-top {
+	width: 85px;
+	height: 15px;
+	border-bottom-left-radius: 6px;
+	background: #0c2d4d;
+	position: absolute;
+	right: 0;
+}
+
+#j-bottom {
+	height: 158px;
+	position: absolute;
+	right: -10px;
+}
+
+#stripes {
+	position: absolute;
+	top: 0px;
+}
+
+.sidebar-stripe {
+	width: 210px;
+	height: 20px;
+	margin-bottom: 20px;
+	padding-right: 40px;
+	background: -webkit-linear-gradient(right, #2a6290, #072d4d);
+	background: -moz-linear-gradient(right, #2a6290, #072d4d);
+	-webkit-transform: skewY(-20deg);
+	-moz-transform: skewY(-20deg);
+	display: block;
+}
+
+#sidebar-nav {
+	list-style-type: none;
+	position: absolute;
+	top: 275px;
+}
+
+#sidebar-nav li a {
+	color: #000;
+	font-size: 25px;
+	width: 150px;
+	margin-bottom: 20px;
+	padding: 7px 10px;
+	border: none;
+	background: #fcfdef;
+	box-shadow: #000 0 2px 50px;
+	display: block;
+}
+
+#connectitude {
+	position: absolute;
+	height: 40px;
+	bottom: 40px;
+	left: 40px;
+}
+
+.connect-box {
+	width: 40px;
+	height: 40px;
+	margin-right: 13px;
+	border: 3px solid #072d4d;
+	display: inline-block;
+	background: -webkit-linear-gradient(#ded1bd, #bca489);
+	background: -moz-linear-gradient(#ded1bd, #bca489);
+	box-shadow: #000 0 2px 50px;
+	opacity: .8;
+}
+
+.connect-box:hover {
+	border-color: #154267;
+	background: -webkit-linear-gradient(#ded1bd, #bca489);
+	background: -moz-linear-gradient(#ded1bd, #bca489);
+	opacity: 1;
+}
+
+#content {
+	min-width: 1120px;
+}
+
+#content-inner {
+	margin-left: 250px;
+	padding: 44px 50px;
+}
+
+#header {
+	font-family: museo sans;
+	color: #fff;
+	height: 245px;
+	background-size: 100%;
+	background-position: bottom;
+	box-shadow: 0px 0 50px rgba(0,0,0,.5);
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#header-left {
+	width: 250px;
+	height: 250px;
+	float: left;
+	border-right: 4px solid #fff;
+	box-shadow: 0px 0 50px rgba(0,0,0,.5);
+	background: -webkit-linear-gradient(right, rgba(42, 98, 144, .6), rgba(8, 46, 78, .6));
+	background: -moz-linear-gradient(right, rgba(42, 98, 144, .6), rgba(8, 46, 78, .6));
+}
+
+#header-inner {
+	text-shadow: rgba(0,0,0,.5) 0 1px 2px;
+	margin-left: 250px;
+	padding: 70px;
+}
+
+#header-inner a {
+	color: #fff;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+#header-inner a:hover {
+	background: rgba(255,255,255,.2);
+}
+
+#logo-text {
+	font-family: museo;
+	color: #fff;
+	font-size: 80px;
+	-webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.8));
+	-moz-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.8));
+}
+
+.post-wrap {
+	padding: 1px 1px 0 1px;
+	background: -webkit-linear-gradient(#bbb0a1, #fcfdef);
+	background: -moz-linear-gradient(#bbb0a1, #fcfdef);
+}
+
+.post {
+	padding-bottom: 20px;
+	border: 5px solid #fcfdef;
+	border-radius: 1px;
+	background: -webkit-linear-gradient(#ebe4d3, #fcfdef);
+	background: -moz-linear-gradient(#ebe4d3, #fcfdef);
+}
+
+.post-toolkit {
+	float: right;
+	color: #16344c;
+	font-family: museo sans;
+	text-align: center;
+	padding: 10px;
+}
+
+.post-toolkit a {
+	background: none;
+	border: none;
+	display: inline-block;
+}
+
+.post-toolkit a:hover {
+	color: rgba(28, 90, 139, 1);
+}
+
+.comments-box, .calendar-box {
+	font-size: 9px;
+	width: 55px;
+	height: 55px;
+	margin-left: 7px;
+	border: 1px solid #fcfbf6;
+	background: -webkit-linear-gradient(#f5f3e9, #f7f6ec);
+	background: -moz-linear-gradient(#f5f3e9, #f7f6ec);
+	box-shadow: rgba(0,0,0,.5) 0 1px 1px;
+	display: inline-block;
+}
+
+.comment-count {
+	font-size: 30px;
+	margin-top: 3px;
+}
+
+.calendar-box {
+	height: 49px;
+	position: relative;
+	top: -4px;
+	box-shadow: rgba(0,0,0,.5) 0 1px 1px,
+		#fcfbf6 0 3px 0,
+		rgba(0,0,0,.5) 0 4px 1px,
+		#fcfbf6 0 6px 0,
+		rgba(0,0,0,.5) 0 7px 1px;
+}
+
+.post-content {
+	max-width: 600px;
+	padding: 10px 15px;
+	border-radius: 2px;
+}
+
+.post-content .title {
+	font-size: 30px;
+}
+
+.post-content p {
+	line-height: 24px;
+	font-family: museo sans;
+}
