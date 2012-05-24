@@ -4,15 +4,31 @@
 <title><?php bloginfo('name'); ?> <?php wp_title('&raquo;', true, 'left'); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<meta name="Copyright" content="Copyright 2005-2009 The Jason Effect." />
+<meta name="Copyright" content="Copyright 2005-2012 Jason Rappaport" />
+<script type="text/javascript" src="http://use.typekit.com/qrk8zqs.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<?php wp_head(); ?>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-317947-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 <body>
 <div id="stripe-vertical"></div>
 <div id="stripe-horizontal"></div>
 <div id="sidebar">
-	<a id="logo" href="#">
+	<a id="logo" href="<?php bloginfo('url'); ?>">
 		<div id="j-top"></div>
-		<img id="j-bottom" src="./images/j.svg" />
+		<img id="j-bottom" src="<?php bloginfo('url'); ?>/wp-content/themes/thejasoneffect/j.svg" />
 	</a>
 	<div id="logo-wrap"></div>
 	<div id="stripes">
@@ -22,43 +38,25 @@
 		}
 		?>
 	</div>
-	<ul id="sidebar-nav">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Projects</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#">RSS Feed</a></li>
-	</ul>
+	<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container' => '' ) ); ?>
 	<div id="connectitude">
-		<a class="connect-box" href="#"></a>
-		<a class="connect-box" href="#"></a>
-		<a class="connect-box" href="#"></a>
+		<a class="connect-box" href="http://www.facebook.com/jasonrappaport" target="_blank">
+			<img id="facebook" src="<?php bloginfo('url'); ?>/wp-content/themes/thejasoneffect/facebook.svg" height="34" />
+		</a>
+		<a class="connect-box" href="http://twitter.com/GoldenChaos" target="_blank">
+			<img id="twitter" src="<?php bloginfo('url'); ?>/wp-content/themes/thejasoneffect/twitter.svg" height="34" />
+		</a>
+		<a class="connect-box" href="http://www.linkedin.com/in/goldenchaos" target="_blank">
+			<img id="linkedin" src="<?php bloginfo('url'); ?>/wp-content/themes/thejasoneffect/linkedin.svg" height="30" />
+		</a>
 	</div>
 	
 </div>
 <div id="content">
-	<div id="header" style="background-image: url(
-	<?php
-		// Check to see if the header image has been removed
-		$header_image = get_header_image();
-		if ( ! empty( $header_image ) ) :
-	?>
-	<?php
-		// The header image
-		// Check if this is a post or page, if it has a thumbnail, and if it's a big one
-		if ( is_singular() &&
-				has_post_thumbnail( $post->ID ) &&
-				( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( HEADER_IMAGE_WIDTH, HEADER_IMAGE_WIDTH ) ) ) &&
-				$image[1] >= HEADER_IMAGE_WIDTH ) :
-			// Houston, we have a new header image!
-			echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
-		else : ?>
-		<?php header_image(); ?>
-	<?php endif; // end check for featured image or standard header ?>
-	<?php endif; // end check for removed header image ?>);">
+	<div id="header" style="background-image: url(<?php header_image(); ?>);">
 		<div id="header-left"></div>
 		<div id="header-inner">
-			<div id="logo-text">The Jason Effect</div>
+			<div id="logo-text"><?php bloginfo('name'); ?></div>
 			<p>I'm Jason Rappaport. I write about stuff and make pretty code and all that. I created a cool service called <a href="https://www.goodsemester.com/">GoodSemester</a>. I also own and operate <a href="http://www.zeldauniverse.net/">Zelda Universe</a> and <a href="https://www.zeldawiki.org">Zelda Wiki</a>. You should read this blog if you want to. Sometimes there's ice cream.</p>
 		</div>
 	</div>

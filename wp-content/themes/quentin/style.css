@@ -1,0 +1,539 @@
+/* @override http://www.thejasoneffect.net/wp-content/themes/quentin/style.css */
+
+/*
+Theme Name: Quentin Blue
+Theme URI: http://www.pikemurdy.com/quentin/
+Description: Organically blue theme that speaks in the vernacular of books.
+Version: 2.5
+Author: Mike Purdy & Jason Rappaport
+Author URI: http://www.thejasoneffect.net/
+
+
+Quentin Blue Theme for Wordpress. Copyright (C) 2008 Mike Purdy & Jason Rappaport.
+
+Giving credit, where credit's due: The original Quentin template was designed 
+by Mike Purdy (www.pikemurdy.com).
+
+License -
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+
+You may edit and modify this theme. But please leave the credit 
+line, and don't try to pass off my work as your own. Thank You.
+
+This program is free software; you can redistribute it and/or modify it under 
+the terms of the GNU General Public License as published by the Free Software 
+Foundation, version 2 of the License.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY 
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*/
+
+
+
+/* Main Elements ------------------------------ */
+
+body {
+	background: #16344c url(images/quentin_st.gif) repeat-x center top;
+	color: #000;
+	font-family: "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+img.pmark {
+	margin: 0 0 50px 190px;
+	}
+img.s-pmark {
+	margin: 0 0 50px 250px;
+	}
+
+
+
+/* typography --------------------------------- */
+
+p, h1, h2, h3, h4, h5, h6, li, .feedback {
+	font-family: "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+}
+
+p  {
+	line-height: 18px;
+}
+
+h2.storytitle
+	{
+	font: italic 25px "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	margin: 15px 0 5px 0;
+	}
+h2.pagetitle {
+	font: bold 12px/15px "lucida grande", "trebuchet ms", georgia, times, serif;
+	color: #000;
+	margin: 1em 0;
+	padding: 6px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	letter-spacing: 1px;
+	background-color: #F4ECD2;
+	text-transform: uppercase;
+	text-align: center;
+	}
+
+#header h1{
+	font: 19px "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+	margin: 40px 0 5px 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+	
+#header h3 {
+	font: normal 14px "lucida grande", "trebuchet ms", georgia, times, serif;
+	margin: 0 0 68px 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #76675A;
+}
+
+#header a {
+	color: #4D3B27;
+	text-decoration: none;
+	font: normal 28px "Times New Roman"
+}
+
+.meta {
+	font: bold 9px/13px "lucida grande", "trebuchet ms", georgia, times, serif;
+	color: #000;
+	margin: 1em 0;
+	padding: 6px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#menu h2 {
+font-family: "lucida grande", "trebuchet ms", georgia, times, serif;
+font-size: 13px;
+}
+.meta li, ul.post-meta li {
+	display: inline;
+	padding: 6px 0;
+}
+
+.meta ul {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.meta, .meta a {
+	font-weight: normal;
+	letter-spacing: 0;
+}
+a {
+	color: #122e41;
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+a:visited {
+	color: #122e41;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+blockquote {
+	border-left: 1px solid #ccc;
+	margin-left: 1.5em;
+	padding-left: 5px;
+}
+
+cite {
+	font-size: 11px;
+	font-style: normal;
+}
+.credit {
+	font-size: 11px;
+	}
+
+
+/* adds and ends --------------------------------- */
+
+
+acronym, abbr {
+	border-bottom: 1px dashed #333;
+
+
+
+
+}
+
+
+acronym, abbr, span.caps {
+	cursor: help;
+	font-size: 10px;
+
+	letter-spacing: .07em;
+}
+
+
+
+
+
+/* Layout --------------------------------- */
+
+#rap {
+	width: 768px;
+	margin: 0 auto 0 auto;
+	background: #122e41 url(images/quentin-bg.jpg) repeat-y center top;
+	padding: 0 15px;
+	border: 10px solid #122e41;
+	}
+/* Tan IE5 box model fix
+	Hides from IE5-mac \*/
+* html #rap {
+	width: 815px;
+	w\idth: 815px;
+}	
+#content  {
+	background: url(images/quentin-bg2.gif) repeat-y right top;
+	text-align: left;
+
+	float: left;
+	width: 65%;
+	margin: 0 auto;
+	padding: 0 15px 15px 15px;
+	overflow: hidden;
+	display: inline; /* IE double margin fix */
+}
+
+/* Tan IE5 box model fix
+	Hides from IE5-mac \*/
+* html #content {
+	width: 69%;
+	w\idth: 69%;
+}
+
+#s-content  {
+	text-align: left;
+	float: left;
+	width: 640px;
+	margin: 0 0 0 60px;
+	padding: 0 0 15px 0;
+	overflow: hidden;
+	display: inline; /* IE double margin fix */
+}
+
+
+#menu {
+	text-align: left;
+	padding: 15px;
+	margin: 0;
+	float: right;
+	width: 26%;
+	overflow: hidden;
+	background: transparent;
+}
+/* Hides from IE5-mac \*/
+* html #menu {
+	width: 30%;
+	w\idth: 30%;
+}
+
+#footer {
+	text-align: center;
+	border-top: solid 1px #4D3B27;
+	clear: both;
+	margin: 5px 0 5px 0;
+	}
+
+#header {
+	text-transform: uppercase;
+	margin: 15px 0 30px 0;
+	padding: 1px;
+	height: 565px;
+	background-image: url(images/quentin-head.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.navigation {
+	font: bold 12px/15px "lucida grande", "trebuchet ms", georgia, times, serif;
+	color: #000;
+	margin: 1em 0 60px 0;
+	padding: 6px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	}
+.n-left {
+	float: left;
+	width: 45%;
+	}
+.n-right {
+	float: right;
+	width: 45%;
+	}
+
+/* classes used by the_meta() --------------------------------- */
+ul.post-meta {
+	list-style: none;
+}
+
+ul.post-meta span.post-meta-key {
+	font-weight: bold;
+}
+
+
+.feedback {
+	color: #ccc;
+	text-align: right;
+	clear: inherit;
+}
+
+#commentform #name, #commentform #email, #commentform #url, #commentform textarea {
+	background: #fff;
+	border: 1px solid #333;
+	padding: .2em;
+}
+
+#commentform textarea {
+	width: 100%;
+}
+
+
+
+
+
+/* Make the Search Perty --------------------------------- */
+
+
+li#search {
+	border-bottom: 1px solid #000;
+}
+
+#menu form {
+	margin: 0 ;
+}
+
+#menu input#s {
+	margin: 0 0 5px 0 ;
+	width: 125px;
+	background: #F6EDD3;
+	border: 1px solid #999;
+	color: #000;
+}
+
+#menu input#sub {
+	margin: 0 0 5px 0 ;
+	width: 60px;
+	font-size: 13px;
+	font-style: italic; 
+	background-color: #F6EDD3; 
+	font-family: "Hoefler Text", Georgia, "Times New Roman", Times, serif; 
+	color: #000;   
+	border: 1px solid #999;
+	}
+
+/* Right Column Lists --------------------------------- */
+
+#menu ul {
+	margin: 4px 0 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu ul li {
+	font-family: "lucida grande", "trebuchet ms", Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	border: 0px;
+	color: #333;
+}
+
+#menu ul ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 4px 0 20px 0;
+	text-align: left;
+}
+
+#menu ul ul li {
+	font-family:  "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+	margin: 1em 0 0.25em 0;
+	font-size: 130%;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-transform: none;
+	padding: 0 0 0 13px;
+}
+
+#menu ul ul li a {
+	text-decoration: none;
+}
+
+#menu ul ul li a:hover {
+	text-decoration: underline;
+}
+
+#menu ul ul ul.children {
+	font-size: 142%;
+	padding-left: 4px;
+}
+#menu ul li p {
+	font-family: "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+	font-size: 100%;
+	text-transform: none;
+	font-weight: normal;
+	margin: 0 0 0.5em 0;
+	color: #333;
+}
+
+/* Make the Calendar Perty --------------------------------- */
+
+#calendar {
+	background:  url(images/calendar.gif) repeat-x center top;
+	width: 194px;
+	height:200px;
+	padding: 10px;
+}
+#wp-calendar {
+	background: #CBB293;
+	empty-cells: show;
+	margin: 5px 0 10px 10px;
+	font-size: 10px;
+	width: 170px;
+	text-align: center;
+}
+
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+}
+
+#wp-calendar #prev a {
+
+	padding-left: 10px;
+	text-align: left;
+}
+
+#wp-calendar a {
+	display: block;
+	text-decoration: none;
+}
+
+#wp-calendar a:hover {
+	background: #EADAB6;
+	color: #5B211A;
+}
+
+#wp-calendar caption {
+	font-family: "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	font-size: 120%;
+	text-align: center;
+	margin: 10px 0 3px 0;
+}
+
+#wp-calendar td {
+	margin: 1px;
+	color: #9D8872;
+	font: normal 100% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: normal;
+	padding: 2px;
+	text-align: center;
+	background-color: #F6EDD3;
+}
+
+#wp-calendar td.pad:hover {
+	background: #EADAB6;
+}
+
+#wp-calendar td:hover, #wp-calendar #today {
+	background: #CBB293;
+	color: #bbb;
+}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	background-color: #CBB293;
+}
+
+
+/* Make the trackback Perty --------------------------------- */
+
+#trackback {
+	background-color: #F4ECD2;
+	margin: 0;
+	padding: 10px;
+	}
+
+#trackback p {
+	font-family: "lucida grande", "trebuchet ms", Arial, Helvetica, sans-serif;
+	font-size: 70%;	margin: 2px 0 1em 0;
+}
+
+
+/* Make the comments Perty --------------------------------- */
+
+#comments {
+	font-size: 150%;
+	font-weight: normal;
+	margin: 1em 0 1em 0;
+	padding: 0;
+	}
+#commentlist {
+	margin: 0;
+	padding: 0;
+	}
+
+#commentlist li {
+	margin: 15px 0 0 0;
+	padding: 1em 10px 3px 10px;
+	list-style: none;
+	border-top: 1px solid #CBB293;
+	border-bottom: 1px solid #CBB293;
+	background-color: #F8F7E3;
+	}
+#commentlist li cite {
+	font-family: "lucida grande", "trebuchet ms", Arial, Helvetica, sans-serif;
+	font-size: 90%;
+}
+#commentlist p {
+	margin: 5px 0 1em 0;
+}
+
+#commentf {
+	background-color: #F4ECD2;
+	margin: 2em 0 0 0;
+	padding: 5px 10px 10px 10px;
+	}
+	
+#postcomment {
+	font-size: 150%;
+	font-weight: normal;
+	}
+#commentform p {
+	font-family: "lucida grande", "trebuchet ms", Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	border-top: 1px solid #A18C74;
+	padding: 10px 0px 0px 0px;
+	}

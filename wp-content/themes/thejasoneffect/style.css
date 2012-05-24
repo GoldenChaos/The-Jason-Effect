@@ -12,11 +12,23 @@ The stuff inside this CSS file goes from top to bottom. Header CSS is at the top
 
 
 body {
-	font-family: Museo;
+	font-family: museo, sans-serif;
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
 	background: #fcfdef;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.clear {
+	clear: both;
 }
 
 a {
@@ -59,7 +71,7 @@ img {
 	position: fixed;
 	top: 245px;
 	left: 0;
-	z-index: 1000;
+	z-index: 100;
 }
 
 #sidebar {
@@ -68,6 +80,9 @@ img {
 	position: fixed;
 	background: -webkit-linear-gradient(right, #213b51, #021626);
 	background: -moz-linear-gradient(right, #213b51, #021626);
+	background: -o-linear-gradient(right, #213b51, #021626);
+	background: -ms-linear-gradient(right, #213b51, #021626);
+	background: linear-gradient(right, #213b51, #021626);
 	border-right: 4px solid #fff;
 	box-shadow: 0px 0 50px rgba(0,0,0,.5);
 }
@@ -78,6 +93,9 @@ img {
 	padding-right: 40px;
 	background: -webkit-linear-gradient(right, #2a6290, #072d4d);
 	background: -moz-linear-gradient(right, #2a6290, #072d4d);
+	background: -o-linear-gradient(right, #2a6290, #072d4d);
+	background: -ms-linear-gradient(right, #2a6290, #072d4d);
+	background: linear-gradient(right, #2a6290, #072d4d);
 	display: block;
 	position: relative;
 	z-index: 2;
@@ -90,13 +108,24 @@ img {
 	border: 10px solid #072d4d;
 	background: -webkit-linear-gradient(#ded1bd, #bca489);
 	background: -moz-linear-gradient(#ded1bd, #bca489);
+	background: -o-linear-gradient(#ded1bd, #bca489);
+	background: -ms-linear-gradient(#ded1bd, #bca489);
+	background: linear-gradient(#ded1bd, #bca489);
 	box-shadow: rgba(255,255,255,.3) 0 2px 50px;
 	position: absolute;
 	top: 40px;
 	left: 40px;
-	z-index: 4;
+	z-index: 50;
 	-webkit-transition: .5s;
 	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	transition: .5s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 #logo:hover {
@@ -107,6 +136,9 @@ img {
 	box-shadow: rgba(255,255,255,.3) 0 2px 50px;
 	-webkit-transition: .03s;
 	-moz-transition: .03s;
+	-o-transition: .03s;
+	-ms-transition: .03s;
+	transition: .03s;
 }
 
 #j-top {
@@ -136,19 +168,28 @@ img {
 	padding-right: 40px;
 	background: -webkit-linear-gradient(right, #2a6290, #072d4d);
 	background: -moz-linear-gradient(right, #2a6290, #072d4d);
+	background: -o-linear-gradient(right, #2a6290, #072d4d);
+	background: -ms-linear-gradient(right, #2a6290, #072d4d);
+	background: linear-gradient(right, #2a6290, #072d4d);
 	-webkit-transform: skewY(-20deg);
 	-moz-transform: skewY(-20deg);
+	-o-transform: skewY(-20deg);
+	-ms-transform: skewY(-20deg);
 	display: block;
 }
 
-#sidebar-nav {
+.menu {
 	list-style-type: none;
 	position: absolute;
 	top: 275px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-#sidebar-nav li a {
-	color: #000;
+.menu li a {
 	font-size: 25px;
 	width: 150px;
 	margin-bottom: 20px;
@@ -159,30 +200,77 @@ img {
 	display: block;
 }
 
+.menu li a:hover, .comment-reply-link:hover, #submit:hover, .post-nav:hover {
+	color: #1c5a8b;
+	background: #fcfdef;
+}
+
 #connectitude {
 	position: absolute;
 	height: 40px;
 	bottom: 40px;
 	left: 40px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .connect-box {
 	width: 40px;
 	height: 40px;
 	margin-right: 13px;
-	border: 3px solid #072d4d;
+	border: 3px solid #154267;
 	display: inline-block;
 	background: -webkit-linear-gradient(#ded1bd, #bca489);
 	background: -moz-linear-gradient(#ded1bd, #bca489);
+	background: -o-linear-gradient(#ded1bd, #bca489);
+	background: -ms-linear-gradient(#ded1bd, #bca489);
+	background: linear-gradient(#ded1bd, #bca489);
 	box-shadow: #000 0 2px 50px;
-	opacity: .8;
+	opacity: .6;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	-ms-transition: .3s;
+	transition: .3s;
 }
 
 .connect-box:hover {
-	border-color: #154267;
 	background: -webkit-linear-gradient(#ded1bd, #bca489);
 	background: -moz-linear-gradient(#ded1bd, #bca489);
+	background: -o-linear-gradient(#ded1bd, #bca489);
+	background: -ms-linear-gradient(#ded1bd, #bca489);
+	background: linear-gradient(#ded1bd, #bca489);
 	opacity: 1;
+}
+
+.connect-box:active {
+	opacity: .8;
+	-webkit-transition: .03s;
+	-moz-transition: .03s;
+	-o-transition: .03s;
+	-ms-transition: .03s;
+	transition: .03s;
+}
+
+#facebook {
+	float: right;
+	margin-right: 5px;
+	margin-top: 3px;
+}
+
+#twitter {
+	float: right;
+	margin-right: 7px;
+	margin-top: 3px;
+}
+
+#linkedin {
+	float: right;
+	margin-right: 4px;
+	margin-top: 6px;
 }
 
 #content {
@@ -195,12 +283,12 @@ img {
 }
 
 #header {
-	font-family: museo sans;
+	font-family: museo-sans, sans-serif;
 	color: #fff;
 	height: 245px;
 	background-size: 100%;
 	background-position: bottom;
-	box-shadow: 0px 0 50px rgba(0,0,0,.5);
+	box-shadow: inset rgba(0,0,0,.1) 0 -1px 0, 0px 0 50px rgba(0,0,0,.5);
 	position: relative;
 	z-index: 2;
 	overflow: hidden;
@@ -211,9 +299,12 @@ img {
 	height: 250px;
 	float: left;
 	border-right: 4px solid #fff;
-	box-shadow: 0px 0 50px rgba(0,0,0,.5);
+	box-shadow: inset rgba(0,0,0,.1) 0 -1px 0, rgba(0,0,0,.5) 0 0 50px;
 	background: -webkit-linear-gradient(right, rgba(42, 98, 144, .6), rgba(8, 46, 78, .6));
 	background: -moz-linear-gradient(right, rgba(42, 98, 144, .6), rgba(8, 46, 78, .6));
+	background: -o-linear-gradient(right, rgba(42, 98, 144, .6), rgba(8, 46, 78, .6));
+	background: -ms-linear-gradient(right, rgba(42, 98, 144, .6), rgba(8, 46, 78, .6));
+	background: linear-gradient(right, rgba(42, 98, 144, .6), rgba(8, 46, 78, .6));
 }
 
 #header-inner {
@@ -232,17 +323,23 @@ img {
 }
 
 #logo-text {
-	font-family: museo;
+	font-family: museo, sans-serif;
 	color: #fff;
 	font-size: 80px;
 	-webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.8));
 	-moz-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.8));
+	-o-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.8));
+	-ms-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.8));
+	mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.8));
 }
 
 .post-wrap {
 	padding: 1px 1px 0 1px;
 	background: -webkit-linear-gradient(#bbb0a1, #fcfdef);
 	background: -moz-linear-gradient(#bbb0a1, #fcfdef);
+	background: -o-linear-gradient(#bbb0a1, #fcfdef);
+	background: -ms-linear-gradient(#bbb0a1, #fcfdef);
+	background: linear-gradient(#bbb0a1, #fcfdef);
 }
 
 .post {
@@ -251,14 +348,22 @@ img {
 	border-radius: 1px;
 	background: -webkit-linear-gradient(#ebe4d3, #fcfdef);
 	background: -moz-linear-gradient(#ebe4d3, #fcfdef);
+	background: -o-linear-gradient(#ebe4d3, #fcfdef);
+	background: -ms-linear-gradient(#ebe4d3, #fcfdef);
+	background: linear-gradient(#ebe4d3, #fcfdef);
 }
 
 .post-toolkit {
 	float: right;
 	color: #16344c;
-	font-family: museo sans;
+	font-family: museo-sans, sans-serif;
 	text-align: center;
 	padding: 10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .post-toolkit a {
@@ -268,10 +373,10 @@ img {
 }
 
 .post-toolkit a:hover {
-	color: rgba(28, 90, 139, 1);
+	color: #1c5a8b;
 }
 
-.comments-box, .calendar-box {
+.comments-box, .calendar-box, .avatar, .comment-reply-link, #submit, .post-nav {
 	font-size: 9px;
 	width: 55px;
 	height: 55px;
@@ -279,6 +384,9 @@ img {
 	border: 1px solid #fcfbf6;
 	background: -webkit-linear-gradient(#f5f3e9, #f7f6ec);
 	background: -moz-linear-gradient(#f5f3e9, #f7f6ec);
+	background: -o-linear-gradient(#f5f3e9, #f7f6ec);
+	background: -ms-linear-gradient(#f5f3e9, #f7f6ec);
+	background: linear-gradient(#f5f3e9, #f7f6ec);
 	box-shadow: rgba(0,0,0,.5) 0 1px 1px;
 	display: inline-block;
 }
@@ -299,17 +407,155 @@ img {
 		rgba(0,0,0,.5) 0 7px 1px;
 }
 
-.post-content {
+.post-content, .comment-wrap {
 	max-width: 600px;
 	padding: 10px 15px;
 	border-radius: 2px;
 }
 
-.post-content .title {
+.post-content .title, #comments {
 	font-size: 30px;
 }
 
-.post-content p {
+.post-content p, .comment p {
 	line-height: 24px;
-	font-family: museo sans;
+	font-family: museo-sans, sans-serif;
+}
+
+.comment-wrap {
+	margin-left: 5px;
+}
+
+#comments {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.commentlist, .children {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.comment-body {
+	background: #ebe4d3;
+	font-size: 14px;
+	border: 1px solid #bcb1a2;
+	margin-bottom: 10px;
+	padding: 10px;
+	clear: both;
+}
+
+.alt .comment-body {
+	background: #f7f2e4;
+}
+
+.children .comment {
+	float: right;
+	width: 90%;
+	margin-top: -11px;
+}
+
+.comment p {
+	padding: 0;
+}
+
+.comment p:first-of-type {
+	margin-top: 5px;
+}
+
+.avatar {
+	float: left;
+	margin-right: 7px;
+	margin-left: 0;
+	padding: 3px;
+	width: 25px;
+	height: 25px;
+}
+
+.fn {
+	font-size: 28px;
+	line-height: 37px;
+	font-style: normal;
+}
+
+.says {
+	display: none;
+}
+
+.comment-meta {
+	float: right;
+	font-size: 11px;
+	margin-top: -40px;
+	width: auto;
+}
+
+.reply {
+	text-align: right;
+	margin-top: -10px;
+}
+
+.comment-reply-link, .post-nav {
+	font-size: 12px;
+	width: auto;
+	height: auto;
+	padding: 2px 3px;
+}
+
+.comment-reply-link:hover, #submit:hover, .post-nav:hover {
+	color: #1c5a8b;
+	background: #fcfdef;
+}
+
+#author, #email, #url {
+	height: 25px;
+	width: 35%;
+	border: 1px solid #bcb1a2;
+	padding: 3px;
+	font-size: 14px;
+}
+
+.label {
+	font-size: 12px;
+	margin-bottom: -10px;
+	margin-left: 3px;
+}
+
+#comment {
+	width: 61%;
+	height: 151px;
+	border: 1px solid #bcb1a2;
+	font-size: 14px;
+	padding: 10px;
+	float: right;
+	margin-top: -165px;
+}
+
+#comment-loggedin {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #bcb1a2;
+	font-size: 14px;
+	padding: 10px;
+}
+
+#submit {
+	width: auto;
+	height: auto;
+	float: right;
+	color: #16344c;
+	font-size: 24px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+#footer {
+	margin-top: 30px;
+}
+
+#copyright {
+	float: right;
+	font-size: 12px;
+	padding: 3px 4px;
 }

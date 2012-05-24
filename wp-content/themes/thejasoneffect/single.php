@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="post-wrap">
 				<div class="post">
 					<div class="post-toolkit">
@@ -28,9 +28,6 @@
 					</div>
 				</div>
 			</div>
-		<?php endwhile; ?>
-			<!-- the older/newer post buttons -->
-		<?php else : ?>
-			<p>Sorry, no posts matched your criteria.</p>
-		<?php endif; ?>
+		<?php endwhile; // end of the loop. ?>
+		<?php comments_template( '', true ); ?>
 <?php get_footer(); ?>
