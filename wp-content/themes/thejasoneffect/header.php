@@ -5,6 +5,9 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <meta name="Copyright" content="Copyright 2005-2012 Jason Rappaport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content = "width = device-width, initial-scale = 1, user-scalable = no" />
 <script type="text/javascript" src="http://use.typekit.com/qrk8zqs.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <?php wp_head(); ?>
