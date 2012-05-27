@@ -7,7 +7,7 @@
 <meta name="Copyright" content="Copyright 2005-2012 Jason Rappaport" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="viewport" content = "width = device-width, initial-scale = 1, user-scalable = no" />
+<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1, user-scalable=no" />
 <script type="text/javascript" src="http://use.typekit.com/qrk8zqs.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <?php wp_head(); ?>
@@ -28,12 +28,12 @@
 <body>
 <div id="stripe-vertical"></div>
 <div id="stripe-horizontal"></div>
+<a id="logo" href="<?php bloginfo('url'); ?>">
+	<div id="j-top"></div>
+	<img id="j-bottom" src="<?php bloginfo('url'); ?>/wp-content/themes/thejasoneffect/j.svg" />
+</a>
+<div id="logo-wrap"></div>
 <div id="sidebar">
-	<a id="logo" href="<?php bloginfo('url'); ?>">
-		<div id="j-top"></div>
-		<img id="j-bottom" src="<?php bloginfo('url'); ?>/wp-content/themes/thejasoneffect/j.svg" />
-	</a>
-	<div id="logo-wrap"></div>
 	<div id="stripes">
 		<?php
 		for ($i = 1; $i <= 50; $i++) {
@@ -60,7 +60,8 @@
 		<div id="header-left"></div>
 		<div id="header-inner">
 			<div id="logo-text"><?php bloginfo('name'); ?></div>
-			<p>I'm Jason Rappaport. I write about stuff and make pretty code and all that. I created a cool service called <a href="https://www.goodsemester.com/">GoodSemester</a>. I also own and operate <a href="http://www.zeldauniverse.net/">Zelda Universe</a> and <a href="https://www.zeldawiki.org">Zelda Wiki</a>. You should read this blog if you want to. Sometimes there's ice cream.</p>
+			<p id="desc-big">I'm Jason Rappaport. I write about stuff and make pretty code and all that. I created a cool service called <a href="https://www.goodsemester.com/">GoodSemester</a>. I also own and operate <a href="http://www.zeldauniverse.net/">Zelda Universe</a> and <a href="https://www.zeldawiki.org">Zelda Wiki</a>. You should read this blog if you want to. Sometimes there's ice cream.</p>
+			<p id="desc-tiny">I'm Jason Rappaport. I write about stuff.</p>
 		</div>
 	</div>
 	<div id="content-inner">
