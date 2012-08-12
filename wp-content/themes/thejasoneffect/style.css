@@ -762,7 +762,8 @@ img {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 	#stripe-vertical {
-		display: none;
+		height: 210px;
+		left: 210px;
 	}
 	
 	#stripe-horizontal {
@@ -778,16 +779,25 @@ img {
 		border: 0;
 		box-shadow: 0px 0 20px rgba(0,0,0,.5);
 		z-index: 2;
-		background: -webkit-linear-gradient(right, #2a6290, #072d4d);
-		background: linear-gradient(right, #2a6290, #072d4d);
+		overflow: hidden;
+	}
+	
+	#stripes {
+		position: absolute;
+		top: -190px;
+		left: 210px;
 	}
 	
 	.sidebar-stripe {
-		display: none;
+		width: 558px;
 	}
 	
 	#logo-wrap {
-		display: none;
+		display: block;
+		width: 210px;
+		height: 210px;
+		padding: 0;
+		z-index: 3;
 	}
 	
 	#logo {
@@ -797,45 +807,32 @@ img {
 	
 	.menu {
 		position: absolute;
-		top: 138px;
-		right: 7px;
+		top: 130px;
+		right: -1px;
 	}
 	
 	.menu li {
-		font-size: 16px;
 		float: left;
-		margin-right: 10px;
+		margin-right: 20px;
+	}
+	
+	.menu li:last-of-type {
+		display: none;
 	}
 	
 	.menu li a {
 		width: auto;
 		margin-bottom: 0;
-		padding: 3px 6px;
-		box-shadow: rgba(0,0,0,.5) 0 1px 20px;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
-	
-	#connectitude {
-		display: none;
-	}
-	
-	/* In case I ever feel like showing these boxes
 	
 	#connectitude {
 		position: absolute;
-		top: 23px;
-		left: 165px;
-		-webkit-transform: scale(.8);
-		transform: scale(.8);
+		top: 80px;
+		right: 20px;
 	}
 	
-	.connect-box {
-		box-shadow: rgba(0,0,0,.5) 0 2px 20px;
-		opacity: 1;
-		display: inline-block;
-		margin-left: 3px;
-		margin-right: 0;
-	} */
-		
 	#header {
 		width: 100%;
 		position: absolute;
@@ -843,10 +840,11 @@ img {
 		height: 210px;
 		box-shadow: inset rgba(0,0,0,.1) 0 -1px 0, 0px 0 40px rgba(0,0,0,.5);
 		background-size: 1024px;
+		z-index: 4;
 	}
 	
 	#header-left {
-		display: none;
+		width: 210px;
 	}
 	
 	#header-inner {
@@ -858,12 +856,12 @@ img {
 		font-size: 60px;
 		position: absolute;
 		top: 45px;
-		left: 210px;
+		left: 240px;
 	}
 	
 	#desc-big {
 		position: absolute;
-		left: 210px;
+		left: 240px;
 		right: 20px;
 		top: 110px;
 	}
