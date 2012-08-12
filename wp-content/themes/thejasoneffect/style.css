@@ -274,7 +274,7 @@ img {
 }
 
 #content {
-	min-width: 1120px;
+	min-width: 1130px;
 }
 
 #content-inner {
@@ -567,7 +567,8 @@ img {
 
 /* Let's make some iOS stuff */
 
-@media only screen and (max-device-width: 480px) {
+@media screen
+and (max-device-width: 480px) {
 	#stripe-vertical {
 		display: none;
 	}
@@ -760,7 +761,10 @@ img {
 
 /* Style modifications for the iPad in both orientations */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
 	#stripe-vertical {
 		height: 210px;
 		left: 210px;
@@ -876,7 +880,10 @@ img {
 	}
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
 	#stripe-vertical {
 		left: 210px;
 	}
