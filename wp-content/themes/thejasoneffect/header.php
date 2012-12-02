@@ -60,7 +60,11 @@
 		<div id="header-left"></div>
 		<div id="header-inner">
 			<div id="logo-text"><?php bloginfo('name'); ?></div>
+<<<<<<< HEAD
 			<p id="desc-big">I'm Jason Rappaport. I write about stuff and make pretty code. I'm trying to reinvent education with <a href="https://www.squareknot.com/">Squareknot</a>. I also run <a href="http://www.zeldauniverse.net/">Zelda Universe</a> and <a href="https://www.zeldawiki.org">Zelda Wiki</a>. You should read this blog if you want to. Sometimes there's ice cream.</p>
+=======
+			<p id="desc-big">I'm Jason Rappaport. I write about stuff and make pretty code and all that. I'm helping the world learn new things every day with <a href="https://www.squareknot.com/">Squareknot</a>. I also own and operate <a href="http://www.zeldauniverse.net/">Zelda Universe</a> and <a href="https://www.zeldawiki.org">Zelda Wiki</a>. You should read this blog if you want to. Sometimes there's ice cream.</p>
+>>>>>>> Newer header text.
 			<p id="desc-tiny">I'm Jason Rappaport. I write about stuff.</p>
 		</div>
 	</div>

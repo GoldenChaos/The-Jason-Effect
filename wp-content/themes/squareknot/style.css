@@ -1,0 +1,216 @@
+/*
+Theme Name: Squareknot
+Theme URI: http://blog.squareknot.com/
+Description: Vintage learning. Delicious.
+Version: 1.0
+Author: Jason Rappaport
+Author URI: http://www.thejasoneffect.net/
+Tags: green, blue, vintage, one column
+
+The stuff inside this CSS file goes from top to bottom. Header CSS is at the top, footer at the bottom, and content in between in the order they appear. Don't forget it!
+*/
+
+#navbar a.alignright {
+	display: table-cell;
+	width: 50px;
+	height: 80px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#navbar a.alignright:hover {
+	background: rgba(255,255,255,.1);
+}
+
+#navbar .alignright img {
+	margin-top: 9px;
+}
+
+.wide-page {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.bluebox {
+	text-align: center;
+}
+
+.greenbox .avatar {
+	float: left;
+	margin-left: -15px;
+	width: 130px;
+	height: 130px;
+	border-radius: 1000px;
+	background-color: rgba(255,255,255,.15);
+	box-shadow:rgba(0,0,0,.2) 2px 2px;
+}
+
+.greenbox .avatar:hover {
+	cursor: default;
+}
+
+.greenbox .title-ticket {
+	float: right;
+	margin: 0 -74px 13px -24px;
+	padding: 0 0 0 55px;
+	width: 779px;
+	height: 155px;
+	background: url('right-step-green.png') no-repeat;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.greenbox .title-wrap {
+	display: table-cell;
+	height: 126px;
+	vertical-align: middle;
+}
+
+.greenbox .title,
+.bluebox .slogan  {
+	width: intrinsic;
+	border: 0 !important;
+	text-shadow: rgba(0,0,0,.1) 2px 2px;
+	font-size: 45px;
+	line-height: 50px;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.bluebox .slogan {
+	font-size: 90px;
+	line-height: normal;
+}
+
+.greenbox .title:hover,
+.bluebox .slogan:hover {
+	background: none;
+	text-shadow: rgba(0,0,0,.4) 4px 4px;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.greenbox .title:active,
+.bluebox .slogan:active {
+	text-shadow: rgba(0,0,0,.1) 2px 2px;
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s;
+	-ms-transition: 0.1s;
+	-o-transition: 0.1s;
+	transition: 0.1s;
+}
+
+.greenbox img {
+	box-shadow: rgba(0,0,0,.2) 2px 2px;
+}
+
+.greenbox .post-footer {
+	margin-top: 40px;
+	text-shadow: rgba(0,0,0,.2) 1px 1px;
+	font-size: 18px;
+	opacity: 0.7;
+}
+
+.greenbox .post-footer .iconfont {
+	position: relative;
+	top: 2px;
+	margin-right: 3px;
+}
+
+.greenbox .post-footer .iconfont:last-of-type {
+	margin-left: 10px;
+}
+
+.empty {
+	padding: 50px 0 10px 0;	
+}
+
+.commentlist {
+	padding: 0 60px;
+	list-style-type: none;
+}
+
+.commentlist li,
+.comment-reply-box .comment {
+	width: 790px;
+}
+
+.commentlist .avatar,
+.comment-reply-box .avatar {
+	float: left;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	box-shadow: rgba(0,0,0,.2) 2px 2px;
+}
+
+.comment {
+	float: left;
+	border-radius: 6px;
+	box-shadow: inset rgba(0,0,0,.1) 0 -1px;
+}
+
+.postbit {
+	padding: 15px !important;
+}
+
+.postbit p {
+	margin-bottom: 10px;
+	letter-spacing: normal;
+	font-size: 16px;
+}
+
+.feed-button {
+	margin-bottom: 15px;
+}
+
+.feed-button a:hover {
+	color: #777 !important;
+}
+
+.comment-reply-box {
+	margin-top: 50px;
+	padding: 0 60px;
+}
+
+#respond-title {
+	margin-left: 3px;
+	font-size: 18px;
+}
+
+#author, #email, #url {
+	margin-top: -5px;
+	margin-right: 6px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 173px;
+	border: 0;
+	font-size: 14px;
+}
+
+#url {
+	width: 174px;
+	
+}
+
+#comment-loggedin,
+#comment {
+	margin-bottom: -15px !important;
+	width: 540px !important;
+	height: 100px !important;
+}
+
+.comment-reply-box .button {
+	float: right;
+	margin-top: -5px;
+	width: 200px;
+	height: 138px;
+	font-size: 18px;
+}
