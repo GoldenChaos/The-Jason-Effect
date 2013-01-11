@@ -380,6 +380,11 @@ img {
 	color: #1c5a8b;
 }
 
+span.infinite-loader {
+	opacity: .3 !important;
+	margin: 20px auto 0 auto !important;
+}
+
 .comments-box, .calendar-box, .avatar, .comment-reply-link, #submit, .post-nav {
 	font-size: 9px;
 	width: 55px;
@@ -526,6 +531,10 @@ img {
 	margin-left: 3px;
 }
 
+.comment-subscription-form {
+	margin: 0;
+}
+
 #comment {
 	width: 61%;
 	height: 151px;
@@ -562,6 +571,10 @@ img {
 	float: right;
 	font-size: 12px;
 	padding: 3px 4px;
+}
+
+img#wpstats {
+	display: none;
 }
 
 

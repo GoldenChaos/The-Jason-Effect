@@ -18,4 +18,15 @@
 	add_custom_image_header('header_style', 'admin_header_style');
 	
 	add_theme_support( 'menus' );
+	
+	add_theme_support( 'infinite-scroll', array(
+		'container'  => 'content-inner',
+		'footer'     => false,
+		'render'     => 'infinite_scroll_render',
+	) );
+	
+	function infinite_scroll_render() {
+	    get_template_part( 'content' );
+	}
+
 ?>

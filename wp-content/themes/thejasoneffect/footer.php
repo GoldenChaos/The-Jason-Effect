@@ -1,9 +1,13 @@
-		<div class="comment-body" id="footer">
-			<?php next_posts_link('<div class="post-nav alignleft" style="margin-left:0;">&laquo; Older Stuff</div>'); ?>
-			<?php previous_posts_link('<div class="post-nav alignleft">Newer Stuff &raquo;</div>'); ?>
-			<span id="copyright">Copyright &copy; 2005-2012 Jason Rappaport</span>
-			<div class="clear"></div>
-		</div>
+		<?php if(is_single() || is_page()): ?>
+			<div class="comment-body" id="footer">
+				<?php if(is_single()) {
+					previous_post_link('<div class="post-nav alignleft" style="margin-left:0;">&laquo; %link</div>');
+					next_post_link('<div class="post-nav alignleft">%link &raquo;</div>');
+				} ?>
+				<span id="copyright">Copyright &copy; 2005-2013 Jason Rappaport</span>
+				<div class="clear"></div>
+			</div>
+		<?php endif; ?>
 	</div> <!-- /contentinner -->
 </div> <!-- /content -->
 <?php wp_footer(); ?>
